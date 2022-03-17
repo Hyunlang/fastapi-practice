@@ -1,0 +1,14 @@
+GET http://localhost:8000/api/v1/users
+
+#POST http://localhost:8000/api/vi/users
+#Content-Type: application/json
+#
+#  {
+#    "first_name": "Rita",
+#    "last_name": "Oliver",
+#    "middle_name": "anna",
+#    "gender": "female",
+#    "roles": [
+#      "student"
+#    ]
+#  }
