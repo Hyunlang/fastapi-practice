@@ -23,6 +23,9 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+def main():
+    return "Hello, FastAPI!"
 
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):  # by declaring the type as Session, the editor now can know the available methods (.add(), .query(), .commit(), etc)
