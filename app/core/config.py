@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
-    POSTGRES_SERVER: str = os.environ.get("POSTGRES_SERVER", "devel.c4r2muiz9fkl.ap-northeast-2.rds.amazonaws.com"),
+    POSTGRES_SERVER: str = os.environ.get("POSTGRES_SERVER", "devel.c4r2muiz9fkl.ap-northeast-2.rds.amazonaws.com:5432"),
     POSTGRES_USER: str = os.environ.get("POSTGRES_USER", "hzdevel")
     POSTGRES_PASSWORD: str = os.environ.get("POSTGRES_PASSWORD", "roqkfgowna12#$")
     POSTGRES_DB: str = os.environ.get("POSTGRES_DB", "test_hyunlang")
