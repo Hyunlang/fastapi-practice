@@ -26,7 +26,7 @@ def get_db():
 
 @app.get("/")
 def main():
-    return "Hello, FastAPI! HAHAHAHAAHAH heheeheheheheheheh"
+    return "Hello, FastAPI!"
 
 
 @app.post("/users/", response_model=schemas.User)
