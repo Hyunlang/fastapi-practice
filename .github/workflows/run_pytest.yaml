@@ -12,6 +12,6 @@ jobs:
         with:
           python-version: "3.8"
       - name: Install requirements
-        run: cd backend && pip install -r requirements.txt
+        run: pip install -r requirements.txt
       - name: Run test
         run: pytest
