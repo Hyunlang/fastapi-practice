@@ -27,3 +27,4 @@ uvloop==0.16.0
 watchgod==0.7
 websockets==10.2
 zipp==3.7.0
+pytest
